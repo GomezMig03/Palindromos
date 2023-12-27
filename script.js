@@ -12,8 +12,6 @@ bot.addEventListener("click", () => {
     let text=inp.value
     if (text==="") {
         alert("Por favor escribe un valor")
-    } else if (text.length>=500) {
-        alert("Por favor escribe un valor más pequeño")
     } else {
         if (isPal(text)) {
             result.innerHTML="<strong>"+text+"</strong> es palíndromo"
