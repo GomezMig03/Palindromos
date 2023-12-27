@@ -1,0 +1,69 @@
+body {
+    --color1: #756AB6;
+    --color2: #AC87C5;
+    --color3: #E0AED0;
+    --color4: #FFE5E5;
+    --color5: #a37fbb;
+    background-color: var(--color1);
+}
+#mainp{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+#pal{
+    display: block;
+    text-align: center;
+    background-color: var(--color4);
+    padding: 2vw;
+    border-radius: 15px;
+    margin-bottom: 3vw;
+}
+#check-btn {
+    border-radius: 15px;
+    background-color: var(--color3);
+    height: 3vh;
+    margin: 2vw;
+}
+#text-input{
+    font-size: 1.2em;
+    height: 3vh;
+    border: 0;
+    background-color: var(--color2);
+    border-bottom: solid var(--color3) .3vw;
+}
+#text-input:focus{
+    outline: none;
+    border-bottom: solid var(--color3) .5vw;
+    background-color: var(--color5);
+}
+#result{
+    visibility: hidden;
+    font-family: Candara, Calibri, Segoe, Segoe UI,
+    Optima, Arial, sans-serif;
+    font-size: 1.5em;
+}
+#exp{
+    font-family: Calisto MT, Bookman Old Style,
+    Bookman, Goudy Old Style, Garamond, Hoefler Text,
+    Bitstream Charter, Georgia, serif;
+}
+#tit,#defTit{
+    Font-family: Century Gothic,
+    CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.7em;
+    margin: .9vw;
+}
+#def{
+    font-family: Century Gothic,
+    CenturyGothic, AppleGothic, sans-serif;
+    font-size: 1.2em;
+    margin: 1vw 5vw;
+}
+#definicion{
+    border-radius: 20px;
+    background-color: var(--color2);
+    padding: 1vw;
+}
