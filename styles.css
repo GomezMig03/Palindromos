@@ -8,7 +8,7 @@ body {
 }
 #mainp{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     height: 75vh;
@@ -22,10 +22,18 @@ body {
     margin-bottom: 3vw;
 }
 #check-btn {
+    cursor: pointer;
     border-radius: 15px;
     background-color: var(--color3);
-    height: 3vh;
+    height: 25px;
     margin: 2vw;
+    border: solid black 1px;
+}
+#check-btn:hover{
+    background-color: var(--color5);
+}
+#check-btn:active{
+    transform: scale(0.97);
 }
 #text-input{
     font-size: 1.2em;
@@ -51,6 +59,7 @@ body {
     Bitstream Charter, Georgia, serif;
 }
 #tit,#defTit{
+    text-align: center;
     Font-family: Century Gothic,
     CenturyGothic, AppleGothic, sans-serif;
     font-size: 1.7em;

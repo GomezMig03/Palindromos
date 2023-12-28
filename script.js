@@ -3,20 +3,28 @@ const bot=document.getElementById("check-btn")
 const result=document.getElementById("result")
 
 inp.addEventListener("keydown", (event) => {
+    var empty=false;
     if (event.key === "Enter") {
         bot.click()
     }
 })
 
+inp.addEventListener("keyup", (event) => {
+    if (event.key === "Enter") {
+        bot.style.transform="scale(1)"
+    }
+})
+
 bot.addEventListener("click", () => {
     let text=inp.value
-    if (text==="") {
+    if (text === "") {
         alert("Por favor escribe un valor")
     } else {
+        bot.style.transform = "scale(0.97)"
         if (isPal(text)) {
-            result.innerHTML="<strong>"+text+"</strong> es palíndromo"
+            result.innerHTML = "<strong>" + text + "</strong> es palíndromo"
         } else {
-            result.innerHTML="<strong>"+text+"</strong> no es palíndromo"
+            result.innerHTML = "<strong>" + text + "</strong> no es palíndromo"
         }
         result.style.visibility = "visible"
     }
