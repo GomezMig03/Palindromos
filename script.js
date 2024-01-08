@@ -3,6 +3,7 @@ const bot=document.getElementById("check-btn")
 const result=document.getElementById("result")
 
 inp.addEventListener("keydown", (event) => {
+    var empty=false;
     if (event.key === "Enter") {
         bot.click()
     }
