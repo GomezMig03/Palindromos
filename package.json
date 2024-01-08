@@ -1,0 +1,31 @@
+{
+  "name": "palindromos",
+  "version": "1.0.0",
+  "description": "Proyecto de FreeCodeCamp para leer una cadena de texto y después comprobar si es o no palíndromo.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Miguel Gómez",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.1",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.gomezmig03.palindromos",
+    "productName": "Palindromos",
+    "copyright": "Copyright © 2024 Miguel Gómez",
+    "mac": {
+      "icon": "Iconos/icon.icns"
+    },
+    "win": {
+      "icon": "Iconos/icon.ico"
+    },
+    "linux": {
+      "icon": "Iconos/icon.png"
+    }
+  }
+}

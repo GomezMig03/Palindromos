@@ -1,1 +1,1 @@
-Proyecto de FreeCodeCamp para leer una cadena de texto y después comprobar si es o no palíndromo.
+Este es un proyecto parte de un curso de freeCodeCamp con el que cree está version desktop para practicar y probar mis habilidades con Node.js y Electron
