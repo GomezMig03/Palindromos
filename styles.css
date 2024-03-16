@@ -12,6 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 75vh;
+    margin: 5px;
 }
 #pal{
     display: block;
@@ -25,9 +26,11 @@ body {
     cursor: pointer;
     border-radius: 15px;
     background-color: var(--color3);
-    height: 25px;
+    height: 4vh;
+    width: 15vh;
     margin: 2vw;
-    border: solid black 1px;
+    border: 0;
+    font-size: 1.2em;
 }
 #check-btn:hover{
     background-color: var(--color5);
@@ -57,6 +60,7 @@ body {
     font-family: Calisto MT, Bookman Old Style,
     Bookman, Goudy Old Style, Garamond, Hoefler Text,
     Bitstream Charter, Georgia, serif;
+    font-size: 1.2em;
 }
 #tit,#defTit{
     text-align: center;
