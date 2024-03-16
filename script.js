@@ -3,7 +3,6 @@ const bot=document.getElementById("check-btn")
 const result=document.getElementById("result")
 
 inp.addEventListener("keydown", (event) => {
-    let empty=false;
     if (event.key === "Enter") {
         detectPal()
     }
