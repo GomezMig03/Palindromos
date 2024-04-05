@@ -1,16 +1,21 @@
 const inp=document.getElementById("text-input")
 const bot=document.getElementById("check-btn")
 const result=document.getElementById("result")
+let pressed = false
 
 inp.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        detectPal()
+        if (!pressed) {
+            detectPal()
+        }
+        pressed = true
     }
 })
 
 inp.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         bot.style.transform="scale(1)"
+        pressed = false
     }
 })
 
